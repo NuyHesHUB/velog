@@ -26,11 +26,10 @@ feed = feedparser.parse(rss_url)
 for entry in feed.entries:
     # 파일 이름에서 유효하지 않은 문자 제거 또는 대체
     file_name = entry.title
-    file_name = re.sub(r'[\\/*?:"<>|]', "", file_name) # 유효하지 않은 문자 제거
-    file_name = re.sub(r'[^\x00-\x7F]+', "", file_name) # 비 ASCII 문자 제거
-    file_name = re.sub(r'[^\w\s-]', "", file_name) # 비 알파벳 문자 제거
+    file_name = file_name.replace('/', '-')  # 슬래시를 대시로 대체
+    file_name = file_name.replace('\\', '-')  # 백슬래시를 대시로 대체
     file_name = file_name.strip() # 앞뒤 공백 제거
-    file_name = re.sub(r'[-\s]+', "-", file_name) # 공백과 대시를 하나의 대시로 대체
+    file_name = re.sub(r'\?', "", file_name) # 물음표 제거
     file_name += '.md' # 마크다운 파일 확장자 추가
     file_path = os.path.join(posts_dir, file_name) # 파일 경로
 
