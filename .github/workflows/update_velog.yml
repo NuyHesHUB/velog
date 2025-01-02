@@ -3,9 +3,10 @@ name: Update Velog
 on:
     push:
         branches:
-            - master
+            - main
     schedule:
         - cron: '0 0 * * *'
+    workflow_dispatch: # 수동 실행을 위한 이벤트 추가
 
 jobs:
     update_velog:
@@ -17,9 +18,9 @@ jobs:
        
             - name: Push changes
               run: |
-                  git config --global user.name 'github-actions[bot]'
-                  git config --global user.email 'github-actions[bot]@user.noreply.github.com'
-                  git push https://${{ secrets.GH_PAT }}@github.com/NuyHesHUB/velog.git
+                  git config user.name 'NuyHesHUB'
+                  git config user.email 'shjoo@intube.kr'
+                  git push https://${{ secrets.GH_PAT_VELOG }}@github.com/NuyHesHUB/velog.git
         
             - name: Set up Python
               uses: actions/setup-python@v2
