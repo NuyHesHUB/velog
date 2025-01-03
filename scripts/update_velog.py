@@ -2,6 +2,7 @@ import feedparser
 import git
 import os
 import re
+from datetime import datetime
 
 # 벨로그 RSS 피드 URL
 rss_url = 'https://api.velog.io/rss/@nuyhes'
@@ -58,14 +59,17 @@ readme_path = os.path.join(repo_path, 'README.md')
 with open(readme_path, 'w', encoding='utf-8') as readme_file:
     readme_file.write('# velog\n\n')
     readme_file.write('## 최근 게시물\n\n')
-    readme_file.write('| 제목 | 링크 |\n')
-    readme_file.write('| --- | --- |\n')
+    readme_file.write('| 제목 | 링크 | 등록 날짜 | 업데이트 날짜 |\n')
+    readme_file.write('| --- | --- | --- | --- |\n')
     for post in recent_posts:
         title = post.title
-        if len(title) > 20:
-            title = title[:20] + '...'
+        if len(title) > 50:
+            title = title[:50] + '...'
         link = post.link
-        readme_file.write(f'| {title} | [링크]({link}) |\n')
+        published_date = datetime(*post.published_parsed[:6]).strftime('%Y-%m-%d')
+        updated_date = datetime(*post.updated_parsed[:6]).strftime('%Y-%m-%d') if 'updated_parsed' in post else published_date
+
+        readme_file.write(f'| {title} | <a href="{link}" target="_blank">바로가기</a> |\n')
 
 # 푸시
 repo.git.add(readme_path)
