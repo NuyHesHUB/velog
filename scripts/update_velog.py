@@ -33,12 +33,28 @@ for entry in feed.entries:
     file_name += '.md' # 마크다운 파일 확장자 추가
     file_path = os.path.join(posts_dir, file_name) # 파일 경로
 
-    if not os.path.exists(file_path):
+    if not os.path.exists(file_path or open(file_path, 'r', encoding='utf-8').read() != entry.description):
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(entry.description) # 글 내용을 파일에 쓰기
 
         repo.git.add(file_path) # 깃에 파일 추가
         repo.git.commit('-m', f'Add post: {entry.title}') # 커밋
+
+# 최근 10개의 게시물 가져오기
+recent_posts = feed.entries[:10]
+
+readme_path = os.path.join(repo_path, 'README.md')
+with open(readme_path, 'w', encoding='utf-8') as readme_file:
+    readme_file.write('# velog\n\n')
+    readme_file.write('## 최근 게시물\n\n')
+    readme_file.write('| 제목 | 링크 |\n')
+    readme_file.write('| --- | --- |\n')
+    for post in recent_posts:
+        title = post.title
+        if len(title) > 50:
+            title = title[:20] + '...'
+        link = post.link
+        readme_file.write(f'| {title} | [{link}]({link}) |\n')
 
 # 푸시
 repo.git.push()
