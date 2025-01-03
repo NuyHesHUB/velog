@@ -59,15 +59,15 @@ readme_path = os.path.join(repo_path, 'README.md')
 with open(readme_path, 'w', encoding='utf-8') as readme_file:
     readme_file.write('# velog\n\n')
     readme_file.write('## 최근 게시물\n\n')
-    readme_file.write('| 제목 | 링크 | 등록 날짜 | 업데이트 날짜 |\n')
-    readme_file.write('| --- | --- | --- | --- |\n')
+    readme_file.write('| 제목 | 링크 |\n')
+    readme_file.write('| --- | --- |\n')
     for post in recent_posts:
         title = post.title
-        if len(title) > 50:
-            title = title[:50] + '...'
+        if len(title) > 70:
+            title = title[:70] + '...'
         link = post.link
-        published_date = datetime(*post.published_parsed[:6]).strftime('%Y-%m-%d')
-        updated_date = datetime(*post.updated_parsed[:6]).strftime('%Y-%m-%d') if 'updated_parsed' in post else published_date
+        """ published_date = datetime(*post.published_parsed[:6]).strftime('%Y-%m-%d')
+        updated_date = datetime(*post.updated_parsed[:6]).strftime('%Y-%m-%d') if 'updated_parsed' in post else published_date """
 
         readme_file.write(f'| {title} | <a href="{link}" target="_blank">바로가기</a> |\n')
 
