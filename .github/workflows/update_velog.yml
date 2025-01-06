@@ -16,11 +16,10 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
        
-            - name: Push changes
+            - name: Configure Git
               run: |
                   git config user.name 'NuyHesHUB'
                   git config user.email 'shjoo@intube.kr'
-                  git push https://${{ secrets.GH_PAT_VELOG }}@github.com/NuyHesHUB/velog.git
         
             - name: Set up Python
               uses: actions/setup-python@v2
@@ -33,3 +32,8 @@ jobs:
 
             - name: Run script
               run: python scripts/update_velog.py
+
+            - name: Pull and Push changes
+              run: |
+                  git pull origin main
+                  git push https://${{ secrets.GH_PAT_VELOG }}@github.com/NuyHesHUB/velog.git
