@@ -72,6 +72,11 @@ with open(readme_path, 'w', encoding='utf-8') as readme_file:
         readme_file.write(f'| {title} | <a href="{link}" target="_blank">바로가기</a> |\n')
 
 # 푸시
-repo.git.add(readme_path)
-repo.git.commit('-m', 'Update README.md')
-repo.git.push()
+
+# 변경 사항이 있는지 확인하고 커밋
+if repo.is_dirty(untracked_files=True):
+    repo.git.add(readme_path)
+    repo.git.commit('-m', 'Update README.md')
+    repo.git.push()
+else:
+    print("No changes to commit")
