@@ -34,6 +34,8 @@ jobs:
               run: python scripts/update_velog.py
 
             - name: Pull and Push changes
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_PAT_VELOG }}
               run: |
                   git pull origin main
-                  git push https://${{ secrets.GH_PAT_VELOG }}@github.com/NuyHesHUB/velog.git
+                  git push https://x-access-token:${GITHUB_TOKEN}@github.com/NuyHesHUB/velog.git
