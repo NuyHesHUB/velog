@@ -4,6 +4,7 @@
 
 | 제목 | 링크 |
 | --- | --- |
+| [튜토리얼] Spring Boot 시작 | <a href="https://velog.io/@nuyhes/%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-Spring-Boot-%EC%8B%9C%EC%9E%91" target="_blank">바로가기</a> |
 | Vue : hasInjectionContext란? | <a href="https://velog.io/@nuyhes/Vue-hasInjectionContext%EB%9E%80" target="_blank">바로가기</a> |
 | Vue : shallowref 란? | <a href="https://velog.io/@nuyhes/Vue-shallowref-%EB%9E%80" target="_blank">바로가기</a> |
 | Python : 디버깅하는 방법 | <a href="https://velog.io/@nuyhes/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%94%94%EB%B2%84%EA%B9%85" target="_blank">바로가기</a> |
@@ -13,4 +14,3 @@
 | DesignPattern : 커스텀 훅 패턴 (Custom Hook Pattern) | <a href="https://velog.io/@nuyhes/React-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%9B%85-%ED%8C%A8%ED%84%B4-Custom-Hook-Pattern" target="_blank">바로가기</a> |
 | React-Query란? | <a href="https://velog.io/@nuyhes/React-Query-Study-React-Query%EB%9E%80-%EC%82%AC%EC%9A%A9%EB%B2%95" target="_blank">바로가기</a> |
 | Vite : vite.config.ts 설정 | <a href="https://velog.io/@nuyhes/Vite-study-vite.config.ts-%EC%84%A4%EC%A0%95" target="_blank">바로가기</a> |
-| 문제해결 : Git 10k 문제 (has too many active changes ...) | <a href="https://velog.io/@nuyhes/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0-VsCode-Git-10k-%EB%AC%B8%EC%A0%9C-has-too-many-active-changes-" target="_blank">바로가기</a> |
