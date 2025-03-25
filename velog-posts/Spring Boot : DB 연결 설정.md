@@ -169,8 +169,7 @@ Spring Boot는 기본적으로 자동으로 읽어준다고 한다.</p>
 2025-03-24T01:12:47.749+09:00  WARN 2208 --- [demo] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-03-24T01:12:47.990+09:00  INFO 2208 --- [demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
 2025-03-24T01:12:47.995+09:00  INFO 2208 --- [demo] [           main] com.example.demo.DemoApplication         : Started DemoApplication in 2.214 seconds (process running for 2.442)
-
-이렇게 된거면 잘 연결된거니?</code></pre><pre><code>HikariPool-1 - Starting...
+</code></pre><pre><code>HikariPool-1 - Starting...
 HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48dff674
 HikariPool-1 - Start completed.</code></pre><p>👉  <strong>HikariCP (DB 커넥션 풀)</strong>이 PostgreSQL에 연결을 시도했고,
 👉 실제로 연결 성공해서 커넥션을 추가했다는 의미이다.</p>
