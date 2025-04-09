@@ -89,7 +89,7 @@
 <li>해당 <code>global-enums.ts</code> 의 파일을 최상위 <code>main.ts</code> 또는 진입점 파일에서 <code>import</code>한다.</li>
 </ol>
 <p>📂 /src/main.ts </p>
-<pre><code class="language-ts">import '@/setup/global-enums';</code></pre>
+<pre><code class="language-ts">import '@/type/global/global-enums';</code></pre>
 <ol start="4">
 <li>(선택적) 타입 보장을 위한 글로벌 선언도 추가한다.
 📂 /src/type/global/global.d.ts</li>
