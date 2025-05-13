@@ -169,10 +169,10 @@ async function fetchTodos() {
 <ul>
 <li>역할 : 쿼리의 상태를 나타내는 문자열</li>
 <li>값의 종류 :<ol>
-<li><code>"idel"</code> : 쿼리가 아직 실행되지 않음</li>
-<li><code>"loading</code> : 데이터를 가져오는 중</li>
-<li><code>"success"</code> : 데이터 가져오기 성공</li>
-<li><code>"error"</code> : 데이터 가져오기 실패</li>
+<li><code>&quot;idel&quot;</code> : 쿼리가 아직 실행되지 않음</li>
+<li><code>&quot;loading</code> : 데이터를 가져오는 중</li>
+<li><code>&quot;success&quot;</code> : 데이터 가져오기 성공</li>
+<li><code>&quot;error&quot;</code> : 데이터 가져오기 실패</li>
 </ol>
 </li>
 <li>사용 예시 :<pre><code class="language-js">  const { status } = useQuery('posts', fetchPosts);
@@ -237,7 +237,7 @@ async function fetchTodos() {
 <tr>
 <td><code>status</code></td>
 <td>쿼리의 상태 (<code>idle</code>, <code>loading</code>, 등)</td>
-<td><code>"idle"</code></td>
+<td><code>&quot;idle&quot;</code></td>
 </tr>
 <tr>
 <td><code>refetch</code></td>
