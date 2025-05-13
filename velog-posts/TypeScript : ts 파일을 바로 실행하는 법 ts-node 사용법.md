@@ -14,22 +14,22 @@
 <p><code>npx tsc --init</code></p>
 <p><strong>🗂️ tsconfig.ts</strong></p>
 <pre><code class="language-ts">{
-  "compilerOptions": {
-    "target": "ES2015",              
-    "module": "commonjs",            
-    "lib": ["ES2015", "DOM"],        
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "rootDir": "./",
-    "skipLibCheck": true      
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;ES2015&quot;,              
+    &quot;module&quot;: &quot;commonjs&quot;,            
+    &quot;lib&quot;: [&quot;ES2015&quot;, &quot;DOM&quot;],        
+    &quot;strict&quot;: true,
+    &quot;esModuleInterop&quot;: true,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;outDir&quot;: &quot;./dist&quot;,
+    &quot;rootDir&quot;: &quot;./&quot;,
+    &quot;skipLibCheck&quot;: true      
   },
-  "include": ["**/*.ts"]
+  &quot;include&quot;: [&quot;**/*.ts&quot;]
 }</code></pre>
 <p>여기서 <code>outDir</code>에서 <code>js컴파일</code> 파일이 생성된다.</p>
-<pre><code class="language-ts">"outDir": "./dist",
-"rootDir": "./",</code></pre>
+<pre><code class="language-ts">&quot;outDir&quot;: &quot;./dist&quot;,
+&quot;rootDir&quot;: &quot;./&quot;,</code></pre>
 <p>여기서 매번 <code>index.ts</code>에서 코드를 추가하고 node로 실행하려면 매번 컴파일을 하고 실행을 해야한다.</p>
 <h2 id="ts-node-모듈">ts-node 모듈</h2>
 <p><a href="https://www.npmjs.com/package/ts-node">[NPM] ts-node 링크</a></p>
