@@ -50,24 +50,24 @@ VITE_APP_SERVER=<a href="https://abc.com">https://abc.com</a></p>
 <h2 id="packagejson-에서-모드-설정">package.json 에서 모드 설정</h2>
 <h3 id="1-packagejson-에서-scripts-에-실행할-환경을-설정한다">1. package.json 에서 scripts 에 실행할 환경을 설정한다</h3>
 <p>ex ) npm run <code>실행명(start-dev, dev)</code> </p>
-<p>그리고 "vite <code>--mode</code> <code>dev</code>" 를 적어준다.</p>
+<p>그리고 &quot;vite <code>--mode</code> <code>dev</code>&quot; 를 적어준다.</p>
 <p>local일 경우 --mode local 은 viet에서 <code>.local</code> 접미사를 가진 환경 파일을 특별하게 처리를 한다고 한다.</p>
 <hr />
 
 <h3 id="🕵️---mode-local을-쓰면">🕵️ --mode local을 쓰면</h3>
 <blockquote>
-<p>⚠️ error when starting dev server: Error: "local" cannot be used as a mode name because it conflicts with the .local postfix for .env files. at loadEnv</p>
+<p>⚠️ error when starting dev server: Error: &quot;local&quot; cannot be used as a mode name because it conflicts with the .local postfix for .env files. at loadEnv</p>
 </blockquote>
 <p>Vite는 <code>.env.[mode]</code> 형식의 파일을 로드할 때, <code>.env.local</code> 파일을 항상 특별히 처리한다고 한다. local을 모드 이름으로 지정하면 <code>.local</code> 접미사와 충돌하여 이와 같은 에러가 발생한다.</p>
 <p>음 .. 웬만하면 local 보다는 다른명으로 하는게 낫겠다.</p>
 <hr />
 
-<pre><code class="language-js">"scripts": {
-    "start-dev": "vite --mode dev",
-    "start-local": "vite --mode 🔴mylocal 또는 test 등등",
-    "build": "tsc -b &amp;&amp; vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+<pre><code class="language-js">&quot;scripts&quot;: {
+    &quot;start-dev&quot;: &quot;vite --mode dev&quot;,
+    &quot;start-local&quot;: &quot;vite --mode 🔴mylocal 또는 test 등등&quot;,
+    &quot;build&quot;: &quot;tsc -b &amp;&amp; vite build&quot;,
+    &quot;lint&quot;: &quot;eslint .&quot;,
+    &quot;preview&quot;: &quot;vite preview&quot;
   },</code></pre>
 <h2 id="vueconfigts-설정">vue.config.ts 설정</h2>
 <pre><code class="language-ts">import react from '@vitejs/plugin-react'
