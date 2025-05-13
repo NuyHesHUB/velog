@@ -36,7 +36,7 @@ At line:1 char:1
 psql -U postgres</code></pre><p>그래도 안될 경우에는</p>
 <pre><code># powerShell
 
- &amp; "C:\Program Files\PostgreSQL\17\bin\psql.exe" -U postgres</code></pre><p>해당 설치된 bin 폴더 내부 psql.exe 경로까지 써주고 -U postgres를 입력한다.</p>
+ &amp; &quot;C:\Program Files\PostgreSQL\17\bin\psql.exe&quot; -U postgres</code></pre><p>해당 설치된 bin 폴더 내부 psql.exe 경로까지 써주고 -U postgres를 입력한다.</p>
 <h4 id="2-postgres-사용자의-암호">2. postgres 사용자의 암호:</h4>
 <p>해당 사용자 암호를 요구한다. postgreSQL 설치할 때 설정한 암호 입력한다.</p>
 <h4 id="3-db생성">3. DB생성</h4>
@@ -51,14 +51,14 @@ psql -U postgres</code></pre><p>그래도 안될 경우에는</p>
 <pre><code>postgres 사용자의 암호:
 
 psql (17.4)
-도움말을 보려면 "help"를 입력하십시오.
+도움말을 보려면 &quot;help&quot;를 입력하십시오.
 
 postgres=#
 postgres=#
 postgres=# CREATE DATABASE mydb;
 CREATE DATABASE
 postgres=# \c mydb
-접속정보: 데이터베이스="mydb", 사용자="postgres".
+접속정보: 데이터베이스=&quot;mydb&quot;, 사용자=&quot;postgres&quot;.
 mydb=# \l
                                              데이터베이스 목록
    이름    |  소유주  | 인코딩 | 로케일 제공자 | Collate | Ctype | 로케일 | ICU 룰 |      액세스 권한
