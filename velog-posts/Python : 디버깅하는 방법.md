@@ -15,7 +15,7 @@
 </blockquote>
 <pre><code>C:\Users\Desktop\coding-test\scripts&gt;py update_coding_test.py
 Traceback (most recent call last):
-  File "C:\Users\Desktop\coding-test\scripts\update_coding_test.py", line 2, in &lt;module&gt;
+  File &quot;C:\Users\Desktop\coding-test\scripts\update_coding_test.py&quot;, line 2, in &lt;module&gt;
     import git
 ModuleNotFoundError: No module named 'git'</code></pre><hr />
 <h3 id="gitpython-모듈-설치">GitPython 모듈 설치</h3>
@@ -36,10 +36,10 @@ ModuleNotFoundError: No module named 'git'</code></pre><hr />
 <h3 id="디버깅">디버깅</h3>
 <pre><code>C:\Users\Desktop\coding-test\scripts&gt;py update_coding_test.py
 Traceback (most recent call last):
-  File "C:\Users\Desktop\coding-test\scripts\update_coding_test.py", line 30, in &lt;module&gt;
+  File &quot;C:\Users\Desktop\coding-test\scripts\update_coding_test.py&quot;, line 30, in &lt;module&gt;
     test_get_changed_files()
     ~~~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\Users\Desktop\coding-test\scripts\update_coding_test.py", line 17, in test_get_changed_files
+  File &quot;C:\Users\Desktop\coding-test\scripts\update_coding_test.py&quot;, line 17, in test_get_changed_files
     result = get_changed_files_in_commit(test_repo_path, test_commit_hash)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 NameError: name 'get_changed_files_in_commit' is not defined</code></pre><p>이렇게 에러가 아주 잘 뜬다 😊</p>
