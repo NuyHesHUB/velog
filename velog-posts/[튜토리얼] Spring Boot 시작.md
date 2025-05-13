@@ -224,7 +224,7 @@ server.port=9090</code></pre>
  =========|</em>|==============|<em>__/=/</em>/<em>/</em>/</p>
 <p> :: Spring Boot ::                (v3.4.3)</p>
 <p>2025-03-16T23:04:27.720+09:00  INFO 16508 --- [demo] [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 16508 (C:\Users\sehye\바탕 화면\code\study\First-Spring-Boot-Project\demo\demo\build\classes\java\main started by sehye in C:\Users\sehye\바탕 화면\code\study\First-Spring-Boot-Project\demo\demo)
-2025-03-16T23:04:27.722+09:00  INFO 16508 --- [demo] [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T23:04:27.722+09:00  INFO 16508 --- [demo] [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: &quot;default&quot;
 2025-03-16T23:04:28.022+09:00  INFO 16508 --- [demo] [           main] com.example.demo.DemoApplication         : Started DemoApplication in 0.552 seconds (process running for 0.74)</p>
 <p>BUILD SUCCESSFUL in 2s</p>
 <pre><code>
