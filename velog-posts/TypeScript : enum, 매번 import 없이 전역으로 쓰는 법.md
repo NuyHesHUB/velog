@@ -13,10 +13,10 @@
 }</code></pre>
 <hr />
 <p>📄.eslintrc</p>
-<pre><code class="language-json">"globals": {
+<pre><code class="language-json">&quot;globals&quot;: {
         ...
-        "UserRole": "readonly",
-        "Answer": "readonly",
+        &quot;UserRole&quot;: &quot;readonly&quot;,
+        &quot;Answer&quot;: &quot;readonly&quot;,
         ...
 },</code></pre>
 <hr />
@@ -33,7 +33,7 @@
 <h3 id="실제-런타임에서는">실제 런타임에서는</h3>
 <p>TypeScript는 declare된 enum은 JS 코드로 변환하지 않는다.</p>
 <pre><code class="language-ts">console.log(UserRole.STD); // ReferenceError</code></pre>
-<p>브라우저는 "UserRole이라는 변수는 정의돼 있지 않다" 고 말한다.</p>
+<p>브라우저는 &quot;UserRole이라는 변수는 정의돼 있지 않다&quot; 고 말한다.</p>
 <table>
 <thead>
 <tr>
@@ -105,7 +105,7 @@
 export {};</code></pre>
 <p><strong>결과</strong></p>
 <p>import 안 해도, 타입 추론 잘 됨</p>
-<pre><code class="language-ts">console.log(UserRole.TCH); // "T"</code></pre>
+<pre><code class="language-ts">console.log(UserRole.TCH); // &quot;T&quot;</code></pre>
 <hr />
 <h3 id="번외">번외</h3>
 <p>가끔 UserRole 과 해당 유저 타입에 따른 쿠키 값 <code>ex :  T or S</code> 이 있는데 조건문을 만들면 너무 길어지기도 하고 가독성이 떨어져 바로 boolean 값으로 나오게 하는 방법을 모색했는데, 이런 방법이 있어 작성해보게 되었다.</p>
