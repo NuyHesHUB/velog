@@ -127,7 +127,7 @@ module.exports = defineConfig({
 <h4 id="css-modules-사용">CSS Modules 사용</h4>
 <p><strong>1. Vue 컴포넌트에서 CSS 모듈 바로 사용</strong> <code>&lt;style module&gt;</code> 태그 사용</p>
 <pre><code class="language-html">&lt;template&gt;
-  &lt;button :class="$style.button"&gt;Click me&lt;/button&gt;
+  &lt;button :class=&quot;$style.button&quot;&gt;Click me&lt;/button&gt;
 &lt;/template&gt;
 
 &lt;style module&gt;
@@ -139,7 +139,7 @@ module.exports = defineConfig({
 <hr />
 <p><strong>2. CSS 모듈을 import 해서 사용</strong></p>
 <pre><code class="language-html">&lt;template&gt;
-  &lt;button :class="styles.button"&gt;Click me&lt;/button&gt;
+  &lt;button :class=&quot;styles.button&quot;&gt;Click me&lt;/button&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -204,7 +204,7 @@ $grayEBE : #EBEBEB;</code></pre>
   css: {
     loaderOptions: {
       sass: {
-        additionalData: '@import "@/assets/scss/_variables";',
+        additionalData: '@import &quot;@/assets/scss/_variables&quot;;',
       },
     },
   },
