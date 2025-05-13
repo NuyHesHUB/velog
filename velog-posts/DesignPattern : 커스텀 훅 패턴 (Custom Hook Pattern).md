@@ -25,15 +25,15 @@
 └── App.jsx                   # 앱의 메인 컴포넌트</code></pre><hr />
 <h3 id="📄-예시-코드">📄 예시 코드</h3>
 <p><code>containers/UserListContainer.jsx</code></p>
-<pre><code class="language-js">import { useState, useEffect } from "react"; 
-import UserList from "../components/UserList"; 
+<pre><code class="language-js">import { useState, useEffect } from &quot;react&quot;; 
+import UserList from &quot;../components/UserList&quot;; 
 
 const UserListContainer = () =&gt; { 
     const [users, setUsers] = useState([]); 
     const [loading, setLoading] = useState(true); 
 
     useEffect(() =&gt; { 
-        fetch("/api/users") 
+        fetch(&quot;/api/users&quot;) 
             .then((res) =&gt; res.json()) 
             .then((data) =&gt; { 
                 setUsers(data); 
@@ -80,14 +80,14 @@ export default UserList;</code></pre>
 <hr />
 <h3 id="📄-예시-코드-1">📄 예시 코드</h3>
 <p><code>hooks/useUserData.js</code></p>
-<pre><code class="language-js">import { useState, useEffect } from "react"; 
+<pre><code class="language-js">import { useState, useEffect } from &quot;react&quot;; 
 
 const useUserData = () =&gt; { 
     const [users, setUsers] = useState([]); 
     const [loading, setLoading] = useState(true); 
 
     useEffect(() =&gt; { 
-        fetch("/api/users") 
+        fetch(&quot;/api/users&quot;) 
             .then((res) =&gt; res.json()) 
             .then((data) =&gt; { 
                 setUsers(data); 
@@ -98,7 +98,7 @@ const useUserData = () =&gt; {
     return { users, loading }; }; export default useUserData;</code></pre>
 <hr />
 <p><code>components/UserList.jsx</code></p>
-<pre><code class="language-js">import useUserData from "../hooks/useUserData"; 
+<pre><code class="language-js">import useUserData from &quot;../hooks/useUserData&quot;; 
 
 const UserList = () =&gt; { 
     const { users, loading } = useUserData(); 
