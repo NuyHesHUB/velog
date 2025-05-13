@@ -93,7 +93,7 @@ spring.jpa.show-sql=true</code></pre><table>
 </tr>
 </tbody></table>
 <hr />
-<p>🕵️ application.yml 파일을 새로 만들어도, 별도로 "이 파일을 써라"라고 선언할 필요는 없다.
+<p>🕵️ application.yml 파일을 새로 만들어도, 별도로 &quot;이 파일을 써라&quot;라고 선언할 필요는 없다.
 Spring Boot는 기본적으로 자동으로 읽어준다고 한다.</p>
 <p><strong>왜 따로 선언 안 해도 되냐?</strong></p>
 <ul>
@@ -141,7 +141,7 @@ Spring Boot는 기본적으로 자동으로 읽어준다고 한다.</p>
  :: Spring Boot ::                (v3.4.3)
 
 2025-03-24T01:12:46.066+09:00  INFO 2208 --- [demo] [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 2208 (C:\Users\sehye\바탕 화면\code\study\First-Spring-Boot-Project\demo\demo\build\classes\java\main started by sehye in C:\Users\sehye\바탕 화면\code\study\First-Spring-Boot-Project\demo\demo)
-2025-03-24T01:12:46.068+09:00  INFO 2208 --- [demo] [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T01:12:46.068+09:00  INFO 2208 --- [demo] [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: &quot;default&quot;
 2025-03-24T01:12:46.454+09:00  INFO 2208 --- [demo] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2025-03-24T01:12:46.473+09:00  INFO 2208 --- [demo] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
 2025-03-24T01:12:46.817+09:00  INFO 2208 --- [demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
