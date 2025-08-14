@@ -178,11 +178,11 @@ request.getSession().setAttribute(&quot;loginUser&quot;, userDto);</code></pre>
 <td>컨테이너 로그에 메시지 기록</td>
 </tr>
 <tr>
-<td>전체 메서드 목록은 공식 문서를 참고하세요: <strong>ServletContext Javadoc (Jakarta 6.0)</strong>. <a href="https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/servletcontext">jakarta.ee</a></td>
+<td>전체 메서드 목록 공식 문서 참고: <strong>ServletContext Javadoc (Jakarta 6.0)</strong>. <a href="https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/servletcontext">jakarta.ee</a></td>
 <td></td>
 </tr>
 <tr>
-<td>(참고: <strong>javax Servlet 4.0 Javadoc</strong>도 필요 시 확인하세요.) <a href="https://www.javadoc.io/doc/javax.servlet/javax.servlet-api/latest/javax/servlet/ServletContext.html">Javadoc</a></td>
+<td>(참고: <strong>javax Servlet 4.0 Javadoc</strong>도 필요 시 확인) <a href="https://www.javadoc.io/doc/javax.servlet/javax.servlet-api/latest/javax/servlet/ServletContext.html">Javadoc</a></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -239,5 +239,5 @@ request.getSession().setAttribute(&quot;loginUser&quot;, userDto);</code></pre>
 <td></td>
 </tr>
 </tbody></table>
-<p>전체 메서드 목록은 공식 문서를 참고하세요: <strong>HttpSession Javadoc (Jakarta 6.0)</strong>. <a href="https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/http/httpsession">jakarta.ee</a><br />(참고: <strong>javax Servlet 4.0/EE7 Javadoc</strong>도 필요 시 확인하세요.) <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html?source=docs">Oracle Docs</a></p>
+<p>전체 메서드 목록 공식 문서: <strong>HttpSession Javadoc (Jakarta 6.0)</strong>. <a href="https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/http/httpsession">jakarta.ee</a><br />(참고: <strong>javax Servlet 4.0/EE7 Javadoc</strong>도 필요 시 확인) <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html?source=docs">Oracle Docs</a></p>
 <hr />
