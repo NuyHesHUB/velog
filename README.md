@@ -4,6 +4,7 @@
 
 | 제목 | 링크 |
 | --- | --- |
+| WSL2: 우분투 개발 환경 세팅 | <a href="https://velog.io/@nuyhes/WSL2-%EC%9A%B0%EB%B6%84%ED%88%AC-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85" target="_blank">바로가기</a> |
 | Java : JSP JSTL 세팅 | <a href="https://velog.io/@nuyhes/Java-JSP-JSTL-%EC%84%B8%ED%8C%85" target="_blank">바로가기</a> |
 | Java : JSP DB 연동(postgreSQL) | <a href="https://velog.io/@nuyhes/Java-JSP-DB-%EC%97%B0%EB%8F%99postgreSQL" target="_blank">바로가기</a> |
 | Java : JSP 저장소 (4대 스코프와 EL 내장 객체) | <a href="https://velog.io/@nuyhes/Java-JSP-%EC%A0%80%EC%9E%A5%EC%86%8C-4%EB%8C%80-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-EL-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4" target="_blank">바로가기</a> |
@@ -13,4 +14,3 @@
 | Java : ServletContext, HttpSession 차이 | <a href="https://velog.io/@nuyhes/Java-ServletContext-HttpSession-%EC%B0%A8%EC%9D%B4" target="_blank">바로가기</a> |
 | Java : Servlet 생명주기 | <a href="https://velog.io/@nuyhes/Java-Servlet-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0" target="_blank">바로가기</a> |
 | Java : Servlet필터 사용하기 | <a href="https://velog.io/@nuyhes/Java-Servlet%ED%95%84%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0" target="_blank">바로가기</a> |
-| IntelliJ : JSP 프로젝트 생성 | <a href="https://velog.io/@nuyhes/%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-JSP-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1" target="_blank">바로가기</a> |
